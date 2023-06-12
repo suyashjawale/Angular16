@@ -1,0 +1,463 @@
+<div class="d-flex justify-content-end mb-3">
+	<button class="btn btn-transparent border btn-sm rounded-2 me-2 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+		<code>
+            <svg width="1.3rem" height="1.3rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19 4V10M19 10C17.8954 10 17 10.8954 17 12C17 13.1046 17.8954 14 19 14M19 10C20.1046 10 21 10.8954 21 12C21 13.1046 20.1046 14 19 14M19 14V20M12 4V16M12 16C10.8954 16 10 16.8954 10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16ZM5 8V20M5 8C6.10457 8 7 7.10457 7 6C7 4.89543 6.10457 4 5 4C3.89543 4 3 4.89543 3 6C3 7.10457 3.89543 8 5 8Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+        </code>
+		<span class="align-bottom">Filters</span>
+	</button>
+	<select class="form-select form-select-sm sort-menu-width shadow-none" aria-label=".form-select-sm example">
+		<option selected>Relevance</option>
+		<option>Price: Low to High</option>
+		<option>Price: High to Low</option>
+	</select>
+</div>
+
+<div class="mb-3">Showing results for <span class="font-600">{{productName}}</span></div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+	<div class="offcanvas-body pt-0">
+
+		<div class="my-1 text-end">
+			<button type="button" class="btn btn-transparent px-0 border-0 shadow-none" data-bs-dismiss="offcanvas" aria-label="Close">
+				<small class="font-600">Back</small>
+			</button>
+		</div>
+
+		<div class="accordion" id="accordionExample">
+
+			<div class="accordion-item border-0">
+			  <h2 class="accordion-header">
+				<button class="accordion-button bg-transparent text-muted px-0 shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+				  <small>Price Range</small>
+				</button>
+			  </h2>
+			  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+				<div class="accordion-body p-0">
+					<div class="mb-3 d-flex justify-content-end">
+						<select class="form-select form-select-sm shadow-none" aria-label=".form-select-sm example">
+							<option selected>Min</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+						<div class="mx-2 align-self-center">To</div>
+						<select class="form-select form-select-sm shadow-none" aria-label=".form-select-sm example">
+							<option selected>Max</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+				</div>
+			  </div>
+			</div>
+
+			<div class="accordion-item border-0">
+				<h2 class="accordion-header">
+				  <button class="accordion-button bg-transparent text-muted px-0 shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+					<small>Frame Color</small>
+				  </button>
+				</h2>
+				<div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				  <div class="accordion-body p-0">
+					<div class="row">
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<div class="d-flex">
+										<span class="dot me-1 bg-warning"></span>
+										<small class="align-self-center">Golden</small>
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<div class="d-flex">
+										<span class="dot me-1 bg-black"></span>
+										<small class="align-self-center">Black</small>
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<div class="d-flex">
+										<span class="dot me-1 bg-light"></span>
+										<small class="align-self-center">White</small>
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<div class="d-flex">
+										<span class="dot me-1 bg-danger"></span>
+										<small class="align-self-center">Brown</small>
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<div class="d-flex">
+										<span class="dot me-1"></span>
+										<small class="align-self-center">Pink</small>
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<div class="d-flex">
+										<span class="dot me-1"></span>
+										<small class="align-self-center">Silver</small>
+									</div>
+								</label>
+							</div>
+						</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+			<div class="accordion-item border-0">
+			  <h2 class="accordion-header">
+				<button class="accordion-button bg-transparent text-muted px-0 shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+				  <small>Frame Border Width</small>
+				</button>
+			  </h2>
+			  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				<div class="accordion-body p-0">
+					<div class="text-center">
+						<img src="assets/one.jpg" class="img-fluid mb-2 sidebar-explanatory-image rounded"/>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<small>0.5 Inch</small>
+								</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<small>1 Inch</small>
+								</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<small>1.5 Inch</small>
+								</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<small>1.75 Inch</small>
+								</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<small>2 Inch</small>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+
+			<div class="accordion-item border-0">
+			  <h2 class="accordion-header">
+				<button class="accordion-button bg-transparent text-muted px-0 shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+				  <small>Frame Size (Length x Breadth) Inch.</small>
+				</button>
+			  </h2>
+			  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				<div class="accordion-body p-0">
+					<div class="text-center">
+						<img src="assets/one.jpg" class="img-fluid mb-2 sidebar-explanatory-image rounded"/>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<small>12 x 18 Inch</small>
+								</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<small>6 x 18 Inch</small>
+								</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<small>22 x 18</small>
+								</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<small>20 x 18</small>
+								</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<small>12 x 20</small>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+		
+			<div class="accordion-item border-0">
+				<h2 class="accordion-header">
+				  <button class="accordion-button bg-transparent text-muted px-0 shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+					<small>Catalogue</small>
+				  </button>
+				</h2>
+				<div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				  <div class="accordion-body p-0">
+					<div class="input-group bg-custom-gray py-1 rounded mb-3">
+						<input type="text" class="form-control border-0 shadow-none bg-transparent" placeholder="Search for products" aria-label="Search for products" aria-describedby="button-addon2">
+						<button class="btn border-0 shadow-none" type="button" id="button-addon2">
+							<code>
+								<svg width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / Search_Magnifying_Glass"> <path id="Vector" d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+							</code>
+						</button>
+					</div>
+
+					<div class="row gy-2">
+						<div class="col-6">
+
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<img src="assets/lord-shiva.jpg" class="img-fluid rounded-2" />
+									<div><small class="font-600">Chhatrapati Shivaji Maharaj</small></div>
+									<div><small class="text-muted">236 Photos</small></div>
+								</label>
+							</div>
+
+						</div>
+						<div class="col-6">
+
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<img src="assets/lord-shiva.jpg" class="img-fluid rounded-2" />
+									<div><small class="font-600">Chhatrapati Shivaji Maharaj</small></div>
+									<div><small class="text-muted">236 Photos</small></div>
+								</label>
+							</div>
+
+						</div>
+
+						<div class="col-6">
+
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<img src="assets/lord-shiva.jpg" class="img-fluid rounded-2" />
+									<div><small class="font-600">Chhatrapati Shivaji Maharaj</small></div>
+									<div><small class="text-muted">236 Photos</small></div>
+								</label>
+							</div>
+
+						</div>
+
+
+						<div class="col-6">
+
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<img src="assets/lord-shiva.jpg" class="img-fluid rounded-2" />
+									<div><small class="font-600">Chhatrapati Shivaji Maharaj</small></div>
+									<div><small class="text-muted">236 Photos</small></div>
+								</label>
+							</div>
+
+						</div>
+
+						<div class="col-6">
+
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<img src="assets/lord-shiva.jpg" class="img-fluid rounded-2" />
+									<div><small class="font-600">Chhatrapati Shivaji Maharaj</small></div>
+									<div><small class="text-muted">236 Photos</small></div>
+								</label>
+							</div>
+
+						</div>
+
+						<div class="col-6">
+
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<img src="assets/lord-shiva.jpg" class="img-fluid rounded-2" />
+									<div><small class="font-600">Chhatrapati Shivaji Maharaj</small></div>
+									<div><small class="text-muted">236 Photos</small></div>
+								</label>
+							</div>
+
+						</div>
+
+						<div class="col-6">
+
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<img src="assets/lord-shiva.jpg" class="img-fluid rounded-2" />
+									<div><small class="font-600">Chhatrapati Shivaji Maharaj</small></div>
+									<div><small class="text-muted">236 Photos</small></div>
+								</label>
+							</div>
+
+						</div>
+
+
+						<div class="col-6">
+
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<img src="assets/lord-shiva.jpg" class="img-fluid rounded-2" />
+									<div><small class="font-600">Chhatrapati Shivaji Maharaj</small></div>
+									<div><small class="text-muted">236 Photos</small></div>
+								</label>
+							</div>
+
+						</div>
+
+						<div class="col-6">
+
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<img src="assets/lord-shiva.jpg" class="img-fluid rounded-2" />
+									<div><small class="font-600">Chhatrapati Shivaji Maharaj</small></div>
+									<div><small class="text-muted">236 Photos</small></div>
+								</label>
+							</div>
+
+						</div>
+
+						<div class="col-6">
+
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<img src="assets/lord-shiva.jpg" class="img-fluid rounded-2" />
+									<div><small class="font-600">Chhatrapati Shivaji Maharaj</small></div>
+									<div><small class="text-muted">236 Photos</small></div>
+								</label>
+							</div>
+
+						</div>
+
+						<div class="col-6">
+
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<img src="assets/lord-shiva.jpg" class="img-fluid rounded-2" />
+									<div><small class="font-600">Chhatrapati Shivaji Maharaj</small></div>
+									<div><small class="text-muted">236 Photos</small></div>
+								</label>
+							</div>
+
+						</div>
+
+						<div class="col-6">
+
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<img src="assets/lord-shiva.jpg" class="img-fluid rounded-2" />
+									<div><small class="font-600">Chhatrapati Shivaji Maharaj</small></div>
+									<div><small class="text-muted">236 Photos</small></div>
+								</label>
+							</div>
+
+						</div>
+
+
+						<div class="col-6">
+
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<img src="assets/lord-shiva.jpg" class="img-fluid rounded-2" />
+									<div><small class="font-600">Chhatrapati Shivaji Maharaj</small></div>
+									<div><small class="text-muted">236 Photos</small></div>
+								</label>
+							</div>
+
+						</div>
+
+
+						<div class="col-6">
+
+							<div class="form-check">
+								<input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									<img src="assets/lord-shiva.jpg" class="img-fluid rounded-2" />
+									<div><small class="font-600">Chhatrapati</small></div>
+									<div><small class="text-muted">236 Photos</small></div>
+								</label>
+							</div>
+
+						</div>
+
+
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+		</div>
+
+	</div>
+</div>
+
+<app-products></app-products>

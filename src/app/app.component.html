@@ -1,7 +1,6 @@
-<nav>
-      <ul>
-            <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
-            <li><a routerLink="/cart" routerLinkActive="active" ariaCurrentWhenActive="page">Cart</a></li>
-      </ul>
-</nav>
-<router-outlet></router-outlet>
+<app-navbar></app-navbar>
+<div class="container-xxl nav-content-margin">
+  <div class="mx-lg-2 mx-xxl-0">
+    <router-outlet></router-outlet>
+  </div>
+</div>
